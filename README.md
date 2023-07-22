@@ -118,3 +118,28 @@ Prueba en modo producción:
 
 Instalaremos Express.js con el siguiente comando:
 `npm i express`
+
+## ¿Qué es una RESTful API?
+
+__Significa Representational State Transfer o transferencia de estado representacional__ (REST)
+
+RESTful API es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet utilizando HTTP como protocolo de comunicación.
+
+Veamos sus métodos:
+- GET: con get podemos obtener, solicitar info.
+- PUT: lo que hace trabajar en modificaiones/actualizaciones toda la data de una tabla.
+- PATCH: permite actualizar un solo campo de la tabla.
+- POST: permite crear productos, categorías, etc.
+- DELETE: sirve para eliminar datos.
+
+| Method | /products | /products/{id}|
+| -------| ----------|---------------|
+| GET    | Get list  | Get           |
+| PUT    | Replace * | Update/Replace|
+| PATCH  | No apply  | Update        |
+| Post   | Create    | No apply      |
+| DELETE | Delete *  | Delete        |
+
+(*) Utilizar con mucha cautela.
+
+
