@@ -113,3 +113,8 @@ entorno de desarrollo y producuión.
 Prueba en modo producción:
 
 `npm run start`
+
+## Instalación de Express.js y tu primer servidor HTTP
+
+Instalaremos Express.js con el siguiente comando:
+`npm i express`
