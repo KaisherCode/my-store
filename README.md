@@ -148,3 +148,24 @@ Veamos sus métodos:
 Instalamos la librería que nos genera data fake, la dependecnai se llama __faker__
 
 `npm install @faker-js/faker --save-dev`
+
+## Instalación de Insomnia en Windows y Mac
+
+La instalación es sencilla, solo tienes que ingresar a [https://insomnia.rest/download](https://insomnia.rest/download) y descargar el instaldor.
+
+## Instalación de Postman en Windows y Mac
+La instalación es sencilla, solo tienes que ingresar a [https://www.postman.com/downloads](https://www.postman.com/downloads) y descargar el instaldor.
+
+## Instalación Postman en Linux
+
+- Debian, Ubuntu y derivados
+
+`sudo apt install postman`
+
+- Arh, Manjaro
+
+`sudo pacman -S postman`
+
+- Fedora 
+
+`sudo yam install postman`
