@@ -143,3 +143,8 @@ Veamos sus métodos:
 (*) Utilizar con mucha cautela.
 
 
+## CRUD
+
+Instalamos la librería que nos genera data fake, la dependecnai se llama __faker__
+
+`npm install @faker-js/faker --save-dev`
