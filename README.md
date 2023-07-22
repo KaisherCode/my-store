@@ -126,11 +126,11 @@ __Significa Representational State Transfer o transferencia de estado representa
 RESTful API es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet utilizando HTTP como protocolo de comunicación.
 
 Veamos sus métodos:
-- GET: con get podemos obtener, solicitar info.
-- PUT: lo que hace trabajar en modificaiones/actualizaciones toda la data de una tabla.
+- GET: con get podemos obtener, solicitar información.
+- PUT: lo que hace es trabajar en actualizaciones de toda la data de una tabla.
 - PATCH: permite actualizar un solo campo de la tabla.
 - POST: permite crear productos, categorías, etc.
-- DELETE: sirve para eliminar datos.
+- DELETE: sirve para eliminar datos. 
 
 | Method | /products | /products/{id}|
 | -------| ----------|---------------|

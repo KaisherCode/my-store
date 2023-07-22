@@ -19,19 +19,36 @@ app.get('/new-path', (req, res) => {
 
 // Product path
 app.get('/products', (req, res) => {
+  res.json([
+    {
+      title:'Green apple imported',
+      price: '9'
+    },
+    {
+      title:'Red apple imported',
+      price: '8'
+    },
+    {
+      title:'Domestic apple',
+      price: '9'
+    }
+  ])
+})
+
+app.get('/products/:id',(req,res)=>{
+const {id}=req.params
   res.json({
-    id:1,
-    title:'Green apple imported',
+    id,
+    title:'Red apple imported',
     price: '8'
   })
 })
 
-// Categories path
-app.get('/categories', (req, res) => {
+app.get('/categories/:categoryId/products/:productId',(req,res)=>{
+  const {categoryId,productId}=req.params
   res.json({
-    id:1,
-    name:'Fruits',
-    image:'https://plazavea.vteximg.com.br/arquivos/ids/177281-1000-1000/manzana-the-garden-verde-1kg.jpg'
+    categoryId,
+    productId
   })
 })
 
