@@ -218,3 +218,8 @@ Cuáles son sus casos de uso:
 - Capturar errores
 - Validar permisos
 - Controlar accesos
+
+### Manejo de errores con Boom
+
+Instalamos la librería Boom
+  `npm i @hapi/boom`
