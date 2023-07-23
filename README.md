@@ -223,3 +223,14 @@ Cuáles son sus casos de uso:
 
 Instalamos la librería Boom
   `npm i @hapi/boom`
+
+
+### Validación de datos con Joi
+
+Instalamos Joi
+
+  `npm i joi`
+  `npm install --save joi`
+  `npm install --save-dev @types/joi`
+
+  Fuente: [https://duprez.medium.com/validación-con-joi-y-nestjs-f11cc32dbf4b](https://duprez.medium.com/validación-con-joi-y-nestjs-f11cc32dbf4b)
