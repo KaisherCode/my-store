@@ -149,23 +149,72 @@ Instalamos la librería que nos genera data fake, la dependecnai se llama __fake
 
 `npm install @faker-js/faker --save-dev`
 
-## Instalación de Insomnia en Windows y Mac
+### Instalación de Insomnia en Windows y Mac
 
 La instalación es sencilla, solo tienes que ingresar a [https://insomnia.rest/download](https://insomnia.rest/download) y descargar el instaldor.
 
-## Instalación de Postman en Windows y Mac
+### Instalación de Postman en Windows y Mac
 La instalación es sencilla, solo tienes que ingresar a [https://www.postman.com/downloads](https://www.postman.com/downloads) y descargar el instaldor.
 
-## Instalación Postman en Linux
+### Instalación Postman en Linux
 
 - Debian, Ubuntu y derivados
 
-`sudo apt install postman`
+  `sudo apt install postman`
 
 - Arh, Manjaro
 
-`sudo pacman -S postman`
+  `sudo pacman -S postman`
 
 - Fedora 
 
-`sudo yam install postman`
+  `sudo yam install postman`
+
+## Servicios
+
+Introducción a servicios
+
+Crear, editar y eliminar
+
+Async awit y captura de errores
+
+
+## Middlewares
+
+### ¿Qué son las middlewares? 
+
+Middleware es software que se sitúa entre un sistema operativo y las aplicaciones que se ejecutan en él. Básicamente, funciona como una capa de traducción oculta para permitir la comunicación y la administración de datos en aplicaciones distribuidas. A veces, se le denomina “plumbing” (tuberías), porque conecta dos aplicaciones para que se puedan pasar fácilmente datos y bases de datos por una “canalización”. El uso de middleware permite a los usuarios hacer solicitudes como el envío de formularios en un explorador web o permitir que un servidor web o permitir que un servidor web devuelva páginas web dinámicas en función del perfil de un usuario.
+
+Fuente [https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-middleware](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-middleware)
+
+Estructura lógica de los middlewares
+
+```jsx
+function (req, res, next){
+  if (something){
+    res.send('end')
+  } else{
+    next()
+  }
+}
+```
+Middleware de tipo error
+
+```jsx
+function (error, req, res, next){
+  if (error){
+    res.status(500).json({error})
+  }else{
+    next()
+  }
+}
+
+```
+
+Cuáles son sus casos de uso:
+
+- Funcionar como pipes
+- Validar datos
+- Capturar errores
+- Validar permisos
+- Controlar accesos
