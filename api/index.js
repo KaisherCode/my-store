@@ -21,11 +21,11 @@ const options={
 }
 app.use(cors(options))
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello my first Express.js server')
 })
 
-app.get('/home', (req, res) => {
+app.get('/api/home', (req, res) => {
   res.send('Hello, i am home page')
 })
 
