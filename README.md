@@ -280,4 +280,6 @@ Puedes encontrar más middlewares populares en el siguiente enlace:
 - Seguridad (Helmet)
 - Testing
 
+### Instalación de cors
 
+  ´npm i cors´
