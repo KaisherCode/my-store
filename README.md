@@ -267,3 +267,17 @@ Passport es un middleware que nos permite establecer diferentes estrategias de a
 Puedes encontrar más middlewares populares en el siguiente enlace:
 
 [http://expressjs.com/en/resources/middleware.html](http://expressjs.com/en/resources/middleware.html)
+
+
+## Deployment
+
+### Consideraciones para producción
+
+- Cors
+- Https
+- procesos de Build
+- Remover logs
+- Seguridad (Helmet)
+- Testing
+
+
